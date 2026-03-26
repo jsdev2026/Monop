@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1A0A0F" rx="80"/>
+  <rect width="512" height="512" fill="url(#bg)" rx="80" opacity="0.6"/>
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#5C1A2E"/>
+      <stop offset="100%" stop-color="#1A0A0F"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Cadre doré -->
+  <rect x="24" y="24" width="464" height="464" fill="none" stroke="#C9A84C" stroke-width="3" rx="64" opacity="0.5"/>
+  <rect x="36" y="36" width="440" height="440" fill="none" stroke="#C9A84C" stroke-width="1" rx="56" opacity="0.3"/>
+  <!-- Cœur principal -->
+  <path d="M256 370 C256 370 100 270 100 175 C100 130 135 100 176 100 C206 100 230 118 256 145 C282 118 306 100 336 100 C377 100 412 130 412 175 C412 270 256 370 256 370Z"
+        fill="#C8536A" filter="url(#glow)" opacity="0.9"/>
+  <!-- Cœur intérieur or -->
+  <path d="M256 330 C256 330 130 248 130 178 C130 148 152 128 178 128 C202 128 222 143 256 172 C290 143 310 128 334 128 C360 128 382 148 382 178 C382 248 256 330 256 330Z"
+        fill="none" stroke="#C9A84C" stroke-width="2" opacity="0.6"/>
+  <!-- Ornements coins -->
+  <text x="60" y="90" font-size="28" fill="#C9A84C" opacity="0.4" text-anchor="middle">✦</text>
+  <text x="452" y="90" font-size="28" fill="#C9A84C" opacity="0.4" text-anchor="middle">✦</text>
+  <text x="60" y="460" font-size="28" fill="#C9A84C" opacity="0.4" text-anchor="middle">✦</text>
+  <text x="452" y="460" font-size="28" fill="#C9A84C" opacity="0.4" text-anchor="middle">✦</text>
+  <!-- Texte MonAmour -->
+  <text x="256" y="430" font-family="Georgia, serif" font-size="36" fill="#C9A84C"
+        text-anchor="middle" letter-spacing="4" font-style="italic" opacity="0.9">MonAmour</text>
+  <!-- Ligne décorative -->
+  <line x1="120" y1="408" x2="392" y2="408" stroke="#C9A84C" stroke-width="1" opacity="0.3"/>
+</svg>
